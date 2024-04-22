@@ -1,0 +1,14 @@
+<library path="lib/libpsolqr_local_planner">
+    <class name="psolqr_planner/PsoLqrPlanner" type="psolqr_planner::PsoLqrPlanner" base_class_type="nav_core::BaseLocalPlanner">
+        <description>
+        
+            Lightweight ROS Local Path Planner Plugin with PSO and LQR :
+
+            This ROS plugin offers a lightweight solution for local path planning, 
+            employing the Particle Swarm Optimization (PSO) algorithm for global path optimization. 
+            It further utilizes the PSO algorithm for precise local path planning and leverages the 
+            Linear Quadratic Regulator (LQR) algorithm to achieve accurate trajectory tracking control.
+            
+        </description>
+    </class>
+</library>
