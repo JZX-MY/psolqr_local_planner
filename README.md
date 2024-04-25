@@ -66,4 +66,54 @@ You can employ this plugin within the ROS navigation package by configuring the 
 </node>
 ```
 
+## 3. Parameter Descriptions
+
+The PSOLQR planner includes several key configuration parameters that allow users to tailor the performance according to their needs. Below are detailed descriptions of the configurable parameters:
+
+### PSO (Particle Swarm Optimization) Parameters
+
+- `n_particles`: Number of particles in the swarm.
+- `n_inherited`: Number of inherited particles.
+- `pointNum`: Number of position points contained in each particle.
+- `max_speed`: Maximum speed of particle movement.
+- `w_inertial`: Inertial weight.
+- `w_social`: Social influence weight.
+- `w_cognitive`: Cognitive weight.
+- `obs_factor`: Obstacle factor.
+- `pso_state_init_ratio`: Initialization ratio for state points.
+- `pso_disturbance_state_init_ratio`: Initialization ratio for disturbed state points.
+- `pub_particles`: Whether to publish particle information.
+- `pso_max_iter`: Maximum number of iterations for PSO.
+
+### Global Path Clipping Parameters
+
+- `global_dist_behind_robot`: Distance to maintain behind the robot.
+- `global_max_path_length`: Maximum allowed length of the path remaining after clipping.
+- `global_dist_threshold`: Maximum distance a pose can be from the current robot's pose to remain in the plan.
+
+### LQR (Linear Quadratic Regulator) Parameters
+
+- `goal_dist_tolerance`: Tolerance for reaching the goal distance.
+- `rotate_tolerance`: Tolerance for rotation angle.
+- `lqr_max_iter`: Maximum number of iterations for LQR computation.
+- `lqr_eps_iter`: Precision for LQR iterations.
+- `max_v`: Maximum linear velocity.
+- `min_v`: Minimum linear velocity.
+- `max_w`: Maximum angular velocity.
+- `min_w`: Minimum angular velocity.
+- `lookahead_time`: Lookahead time.
+- `min_lookahead_dist`: Minimum lookahead distance.
+- `max_lookahead_dist`: Maximum lookahead distance.
+- `Q_matrix_diag`: Weight matrix for penalizing state error while tracking.
+- `R_matrix_diag`: Weight matrix for penalizing input error while tracking.
+
+---
+
+For more information, please refer to the file psolqr_planner_params.yaml
+
+
+
+
+
+
 
