@@ -133,9 +133,6 @@ Each of these files is integral to the functioning of the PSO_LQR planner, playi
 
 --- 
 
-Here's the acknowledgments section to be added to the `README.md` file, following the file descriptions and written in English according to the formatting of the provided README file:
-
----
 
 ## 5. Acknowledgments
 
