@@ -111,7 +111,27 @@ The PSOLQR planner includes several key configuration parameters that allow user
 
 For more information, please refer to the file psolqr_planner_params.yaml
 
+---
 
+## 4. File Descriptions
+
+### Core Components
+
+- **`psolqr_planner.h/cpp`**: Implements the PSO_LQR local planner class. These files integrate the functionalities of the PSO optimizer and the LQR controller into a local path planning plugin for ROS. They handle the setup and updates required for local path planning using the combined strategies of PSO and LQR.
+
+- **`pso_optimizer.h/cpp`**: Contains the implementation of the Particle Swarm Optimization (PSO) planner. These files define the optimization strategies for the particles, manage particle properties like position and velocity, and handle the convergence of the swarm towards the optimal path under given constraints.
+
+- **`lqr_controller.h/cpp`**: Houses the abstract LQR controller class. This component calculates the optimal control commands based on the current robot state and the desired trajectory, using the Linear Quadratic Regulator approach for minimized error.
+
+- **`pso_trajectory.h/cpp`**: Consists of the trajectory generation class that uses quasi-uniform B-spline curves to generate smooth trajectories from given waypoints. These files play a crucial role in defining the path that the robot will follow, ensuring smoothness and feasibility with respect to the robot's dynamics.
+
+### Utility and Helper Components
+
+- **`psolqr_planner_plugin.xml`**: Defines the ROS pluginlib class loader details for the PSO_LQR planner, allowing it to be dynamically loaded along with specified parameters.
+
+Each of these files is integral to the functioning of the PSO_LQR planner, playing a specific role in either planning, control, or utility functions.
+
+--- 
 
 
 
