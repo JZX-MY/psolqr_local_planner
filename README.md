@@ -133,6 +133,20 @@ Each of these files is integral to the functioning of the PSO_LQR planner, playi
 
 --- 
 
+Here's the acknowledgments section to be added to the `README.md` file, following the file descriptions and written in English according to the formatting of the provided README file:
+
+---
+
+## 5. Acknowledgments
+
+We extend our heartfelt thanks to Mr. Yang Haodong, the original author of the `lqr_planner` from the open-source project `ros_motion_planning`. His work has significantly influenced the implementation of the LQR controller in our project. The original project can be accessed at [ros_motion_planning](https://github.com/ai-winter/ros_motion_planning).
+
+In this project, we have taken the foundation laid by Mr. Yang and evolved it by redesigning the framework structure to establish an independent LQR control library. This new structure is not dependent on the `local_planner` package and allows for easy calculation of control commands using the `lqr_control()` function. This redesign facilitates the straightforward invocation of this control library, enhancing its applicability and integration into diverse robotic systems.
+
+We are deeply grateful for Mr. Yang Haodong's spirit of sharing and contribution, which has allowed us to further develop and improve upon his exemplary work.
+
+--- 
+
 
 
 
